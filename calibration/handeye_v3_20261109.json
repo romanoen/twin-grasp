@@ -1,0 +1,96 @@
+{
+  "status": "v3_camera_plus_tip_touch_confirmed_on_fresh_touches",
+  "joint_zero_offsets_deg": {
+    "shoulder_lift": -2.7939481717951904,
+    "elbow_flex": -4.411508587006142,
+    "wrist_flex": 0.36275356112994595
+  },
+  "T_gripper_camera": [
+    [
+      -0.17951161285821027,
+      0.8927232006053184,
+      0.4133048123964209,
+      -0.07050325571892618
+    ],
+    [
+      -0.9836707463624345,
+      -0.16841250998050092,
+      -0.06347510719045121,
+      0.009453360338617645
+    ],
+    [
+      0.012939999992876,
+      -0.4179503721532786,
+      0.9083776983265937,
+      -0.08801098576087628
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_base_tag": [
+    [
+      -0.05697860504073383,
+      -0.9958450997617427,
+      0.07103503254124864,
+      0.40901176878807466
+    ],
+    [
+      0.9979389217454216,
+      -0.058913033835252274,
+      -0.025439396807150752,
+      -0.1406064709762738
+    ],
+    [
+      0.029518587926886438,
+      0.06943912243721544,
+      0.9971493675683457,
+      -0.031117175979461405
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "tag_size_m": 0.08,
+  "tag_family": "tag36h11",
+  "tag_id": 1,
+  "gripper_frame": "gripper_frame_link",
+  "joint_offset_usage": "Add these offsets to LeRobot DEGREES joint values for forward kinematics only. Servo calibration has NOT been changed.",
+  "provenance": {
+    "previous": "camera/handeye_v2_20261108.json",
+    "previous_sha256": "ec2a939714a8cea71f775ef0a14c5b19e229485dbfdf7e205675880cfa028368",
+    "candidate": "project1/data/tip_camera_20261109/candidate.json",
+    "candidate_sha256": "ddef035abd4827309c68530ae18f2d6fec5a3e447692d150b005b749a190ec7e",
+    "evaluation": "project1/data/tip_camera_20261109/evaluation.json",
+    "evaluation_sha256": "d8567cdcb832b99c8374c7805bd39f5a5f98d66581ffe723d03aeb6e9f1a49aa",
+    "confirmation_kind": "tip_touch",
+    "confirmed_on": "2026-11-09",
+    "confirmation_result": {
+      "position_rms_mm": 4.773572741993993,
+      "position_max_mm": 6.266804585926732,
+      "rotation_rms_deg": null
+    },
+    "camera_consistency": {
+      "camera_fit": {
+        "rms_mm": 4.792547650529932,
+        "max_mm": 7.791013671442319
+      },
+      "camera_control": {
+        "rms_mm": 4.773765047357031,
+        "max_mm": 7.407639458565824
+      },
+      "tip": {
+        "rms_mm": 3.5231155175123368,
+        "max_mm": 5.155682976093906
+      }
+    },
+    "camera_convention": "Stored before model roll compensation; RobotModel applies F^-1 Rz(-roll_offset) F.",
+    "valid_while": "Camera mount and tag unchanged since 2026-11-08 22:40."
+  }
+}

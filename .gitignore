@@ -1,0 +1,16 @@
+__pycache__/
+.DS_Store
+node_modules/
+ui/test-results/
+ui/playwright-report/
+
+# written by the running station
+ui/data/command.json
+ui/data/grasp-state.json
+ui/data/live-robot.json
+ui/data/*.tmp
+ui/data/camera.jpg
+data/scene_state.json
+data/grasp/
+data/grasp_finecal/
+data/camera_obs/

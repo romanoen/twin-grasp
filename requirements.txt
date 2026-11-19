@@ -1,0 +1,4 @@
+lerobot[feetech]==0.6.1
+numpy>=2.2
+opencv-python-headless>=4.10
+scipy>=1.14

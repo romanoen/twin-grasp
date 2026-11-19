@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "wrist_roll_zero_offset_deg": -90.0,
+  "roll_offset_source": "2026-11-08: user observed jaws swapped at +90 (fixed/moving jaw sides confirmed by opening the gripper); set to -90. Residual offset still to be determined by tip touch tests.",
+  "roll_offset_physically_verified": false,
+  "tool_reference_physically_verified": true,
+  "references": {
+    "handeye": {
+      "path": "calibration/handeye_v3_20261109.json",
+      "sha256": "aee53eaf1000f8cb015bcb21f26e4d25ed3b1adcdec67ce2fd112af7d827ead8"
+    },
+    "calibration": {
+      "path": "calibration/follower.json",
+      "sha256": "6d66f2792c42e689f5cb8f7819c451933c76d14aa727ba8008ca454e8b1b494f"
+    },
+    "urdf": {
+      "path": "models/so101/so101_new_calib.urdf",
+      "sha256": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c"
+    },
+    "registration": {
+      "path": "calibration/registration_20261109.json",
+      "sha256": "c6d73ccfb886094dcbf470121dd14b7ec3464551656935db007e7909b6e88170"
+    }
+  },
+  "calibration_version": "v3_tip_camera_20261109"
+}

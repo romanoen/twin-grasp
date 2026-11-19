@@ -1,0 +1,17 @@
+{
+  "name": "so101-grasp-station-ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test scene.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0"
+  }
+}

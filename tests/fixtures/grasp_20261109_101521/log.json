@@ -1,0 +1,143 @@
+[
+  {
+    "event": "locate",
+    "cube": {
+      "q": [
+        121.04358224580163,
+        176.5240460682232,
+        86.77635557842234
+      ],
+      "silhouette_rms_px": 2.048453132746701,
+      "frames": 8
+    },
+    "plan_ok": true,
+    "reason": null,
+    "raw": {
+      "shoulder_pan": 2054,
+      "shoulder_lift": 1037,
+      "elbow_flex": 2260,
+      "wrist_flex": 2979,
+      "wrist_roll": 1966,
+      "gripper": 2464
+    },
+    "model_id": "b9823dd02a3c53887ed84809cbf3268afa99e97975dd6531f73f818732e1a26d",
+    "plan": {
+      "hover": {
+        "raw": {
+          "shoulder_pan": 2142,
+          "shoulder_lift": 2137,
+          "elbow_flex": 1866,
+          "wrist_flex": 2996,
+          "wrist_roll": 2148,
+          "gripper": 2464
+        },
+        "yaw_deg": 356.77635557842234,
+        "position_error_mm": 0.18054438381644924,
+        "tilt_deg": 1.032660522016082,
+        "yaw_error_deg": 0.016387857754295965,
+        "roll_travel_raw": 182,
+        "ok": true
+      },
+      "descent": [
+        {
+          "shoulder_pan": 2141,
+          "shoulder_lift": 2141,
+          "elbow_flex": 1911,
+          "wrist_flex": 2948,
+          "wrist_roll": 2147,
+          "gripper": 2464
+        },
+        {
+          "shoulder_pan": 2140,
+          "shoulder_lift": 2148,
+          "elbow_flex": 1950,
+          "wrist_flex": 2901,
+          "wrist_roll": 2146,
+          "gripper": 2464
+        },
+        {
+          "shoulder_pan": 2140,
+          "shoulder_lift": 2159,
+          "elbow_flex": 1985,
+          "wrist_flex": 2855,
+          "wrist_roll": 2146,
+          "gripper": 2464
+        },
+        {
+          "shoulder_pan": 2139,
+          "shoulder_lift": 2174,
+          "elbow_flex": 2016,
+          "wrist_flex": 2809,
+          "wrist_roll": 2145,
+          "gripper": 2464
+        },
+        {
+          "shoulder_pan": 2139,
+          "shoulder_lift": 2193,
+          "elbow_flex": 2042,
+          "wrist_flex": 2764,
+          "wrist_roll": 2144,
+          "gripper": 2464
+        },
+        {
+          "shoulder_pan": 2138,
+          "shoulder_lift": 2215,
+          "elbow_flex": 2065,
+          "wrist_flex": 2719,
+          "wrist_roll": 2144,
+          "gripper": 2464
+        }
+      ],
+      "grasp": {
+        "shoulder_pan": 2138,
+        "shoulder_lift": 2215,
+        "elbow_flex": 2065,
+        "wrist_flex": 2719,
+        "wrist_roll": 2144,
+        "gripper": 2464
+      },
+      "cube_centre_mm": [
+        121.04358224580163,
+        176.5240460682232,
+        12.5
+      ],
+      "yaw_deg": 356.77635557842234
+    }
+  },
+  {
+    "event": "hover",
+    "raw": {
+      "shoulder_pan": 2137,
+      "shoulder_lift": 2141,
+      "elbow_flex": 1891,
+      "wrist_flex": 2994,
+      "wrist_roll": 2145,
+      "gripper": 2464
+    },
+    "message": "hover fertig - Greifpunkt laut Modell 8.5 mm vom Ziel (z -6.0)"
+  },
+  {
+    "event": "descend",
+    "raw": {
+      "shoulder_pan": 2137,
+      "shoulder_lift": 2214,
+      "elbow_flex": 2064,
+      "wrist_flex": 2726,
+      "wrist_roll": 2146,
+      "gripper": 2464
+    },
+    "message": "descend fertig - Greifpunkt laut Modell 1.2 mm vom Ziel (z +0.5)"
+  },
+  {
+    "event": "abort",
+    "message": "Taste gedrueckt - Greifer angehalten"
+  },
+  {
+    "event": "abort",
+    "message": "Taste gedrueckt - Greifer angehalten"
+  },
+  {
+    "event": "abort",
+    "message": "Taste gedrueckt - Greifer angehalten"
+  }
+]

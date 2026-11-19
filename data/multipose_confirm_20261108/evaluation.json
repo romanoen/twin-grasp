@@ -1,0 +1,159 @@
+{
+  "status": "evaluated",
+  "measured": 8,
+  "failed": [],
+  "criterion": {
+    "control_position_rms_mm_below": 4.0,
+    "control_position_max_mm_at_most": 6.0,
+    "rule": "Simplest variant meeting both limits on the held-out controls is adopted; otherwise nothing is applied."
+  },
+  "passing": [
+    "b_plus_three_joint_offsets"
+  ],
+  "recommended": "b_plus_three_joint_offsets",
+  "results": {
+    "current": {
+      "position_rms_mm": 17.315653420121063,
+      "position_max_mm": 21.858931525503564,
+      "rotation_rms_deg": 1.8198461845565803,
+      "rows": [
+        {
+          "pose": 1,
+          "position_mm": 19.663503145867583,
+          "rotation_deg": 1.7232484274444482
+        },
+        {
+          "pose": 2,
+          "position_mm": 21.858931525503564,
+          "rotation_deg": 1.6958766338774927
+        },
+        {
+          "pose": 3,
+          "position_mm": 19.33878099953006,
+          "rotation_deg": 1.8220455327466307
+        },
+        {
+          "pose": 4,
+          "position_mm": 13.357939344658075,
+          "rotation_deg": 1.7333982300574873
+        },
+        {
+          "pose": 5,
+          "position_mm": 12.278896563411413,
+          "rotation_deg": 1.7835726014292448
+        },
+        {
+          "pose": 6,
+          "position_mm": 15.953965808704636,
+          "rotation_deg": 1.6970089490475724
+        },
+        {
+          "pose": 7,
+          "position_mm": 14.716583060316252,
+          "rotation_deg": 2.0270555026296826
+        },
+        {
+          "pose": 8,
+          "position_mm": 18.97069968733348,
+          "rotation_deg": 2.038306755057599
+        }
+      ]
+    },
+    "a_registration_only": {
+      "position_rms_mm": 4.892207891555897,
+      "position_max_mm": 7.637827178157955,
+      "rotation_rms_deg": 1.2325494174821154,
+      "rows": [
+        {
+          "pose": 1,
+          "position_mm": 5.285326170101588,
+          "rotation_deg": 1.174839024336417
+        },
+        {
+          "pose": 2,
+          "position_mm": 5.320925697219165,
+          "rotation_deg": 1.3405514005841919
+        },
+        {
+          "pose": 3,
+          "position_mm": 7.637827178157955,
+          "rotation_deg": 1.5889361076915711
+        },
+        {
+          "pose": 4,
+          "position_mm": 6.28988266584395,
+          "rotation_deg": 0.9568262686945322
+        },
+        {
+          "pose": 5,
+          "position_mm": 4.330272893349794,
+          "rotation_deg": 0.5197276768789098
+        },
+        {
+          "pose": 6,
+          "position_mm": 2.4325741373887175,
+          "rotation_deg": 1.240088857117346
+        },
+        {
+          "pose": 7,
+          "position_mm": 1.767810521205657,
+          "rotation_deg": 1.0718946017414284
+        },
+        {
+          "pose": 8,
+          "position_mm": 3.087037281403638,
+          "rotation_deg": 1.6059171864947221
+        }
+      ]
+    },
+    "b_plus_three_joint_offsets": {
+      "position_rms_mm": 2.446793517046085,
+      "position_max_mm": 5.175967974522269,
+      "rotation_rms_deg": 1.0895431888325693,
+      "rows": [
+        {
+          "pose": 1,
+          "position_mm": 2.5621012645530112,
+          "rotation_deg": 1.082564419223599
+        },
+        {
+          "pose": 2,
+          "position_mm": 1.4856752129152906,
+          "rotation_deg": 1.154807597328655
+        },
+        {
+          "pose": 3,
+          "position_mm": 1.6441425612315836,
+          "rotation_deg": 1.4975833671215546
+        },
+        {
+          "pose": 4,
+          "position_mm": 5.175967974522269,
+          "rotation_deg": 1.0265094782124549
+        },
+        {
+          "pose": 5,
+          "position_mm": 2.277034202181421,
+          "rotation_deg": 0.5395149502521552
+        },
+        {
+          "pose": 6,
+          "position_mm": 1.0492523774447131,
+          "rotation_deg": 1.0249855270961346
+        },
+        {
+          "pose": 7,
+          "position_mm": 0.4918774816632442,
+          "rotation_deg": 0.8500888437082704
+        },
+        {
+          "pose": 8,
+          "position_mm": 1.7610185663407778,
+          "rotation_deg": 1.2769135323881993
+        }
+      ]
+    }
+  },
+  "calibration_changed": false,
+  "note": "Fresh poses, never used for fitting. Camera/model consistency, not physically measured tool position."
+}

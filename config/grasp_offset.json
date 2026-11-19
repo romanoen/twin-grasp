@@ -1,0 +1,21 @@
+{
+  "bias_mm": [
+    -5.259484056104588,
+    0.78018534703137
+  ],
+  "applied": "2026-11-09 12:33",
+  "model_id": "821c5f313a4bb3b2b317f5b1d28eb93f9dd3b5d8b1eea754e1adb7f669816978",
+  "from_fit": {
+    "ready": true,
+    "n": 23,
+    "bias_mm": [
+      -5.259484056104588,
+      0.78018534703137
+    ],
+    "before_rms_mm": 3.505855712869911,
+    "after_rms_mm": 2.405090170516986,
+    "loo_rms_mm": 2.6105847718573556,
+    "direction_eig": 0.3019263153189081
+  },
+  "meaning": "Grasp point bias in table frame (mm); grasp_app commands cube centre minus this."
+}

@@ -1,0 +1,488 @@
+{
+  "status": "planned_not_measured",
+  "purpose": "confirmation_only",
+  "seed": 1108,
+  "avoid_session": "data/multipose_20261108",
+  "min_novelty_deg": 8.0,
+  "model_id": "c9e26565052fd5abae9c0ee387da4e05fb8f9f451e846ddd65f3a483564eedae",
+  "criterion": {
+    "control_position_rms_mm_below": 4.0,
+    "control_position_max_mm_at_most": 6.0,
+    "rule": "Simplest variant meeting both limits on the held-out controls is adopted; otherwise nothing is applied."
+  },
+  "variants": [
+    "a_registration_only: camera mount + base-tag (12 params)",
+    "b_plus_three_joint_offsets: + shoulder_lift/elbow_flex/wrist_flex zero offsets (15 params)"
+  ],
+  "control_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "code_sha256": {
+    "plan_multipose.py": "04255513ec303612390dda9d6bcb41b330ed9aced0e97b7467e03529401f5d97",
+    "fit_alignment_check.py": "f9ce635631e9710b56e97ff604e6a575c957aaba96072d57849ec9c9983a8198",
+    "measure_multipose.py": "f31bed678bcda1ec38b5c98d764b35ff47ddb306bb202ff3f03efb842a3d8aa2",
+    "capture_repeatability.py": "31f56d0a0922b15d8bc4bfd17b418d1dbdb997c9aebeef342978e5bed896c90e",
+    "capture_repeatability_auto.py": "c7441bf124efa20075447911ba04e719c92966cbdc0038b3da788316fb3c1796",
+    "evaluate_confirmation.py": "68f32f6a70aa7ae059410df56c2ac0eb5e57acde1fa68ca8b860e021eda3c974"
+  },
+  "start_hint": "Arm grob in Haltung 1 bringen (innerhalb 15 Grad), dann H.",
+  "limits": {
+    "occluded_below_px": 380,
+    "envelope_raw": {
+      "shoulder_pan": [
+        2084,
+        2445
+      ],
+      "shoulder_lift": [
+        1734,
+        2551
+      ],
+      "elbow_flex": [
+        1015,
+        2301
+      ],
+      "wrist_flex": [
+        2056,
+        3156
+      ],
+      "wrist_roll": [
+        1326,
+        3028
+      ]
+    },
+    "envelope_margin_deg": 5,
+    "perturb_deg": {
+      "shoulder_pan": 20,
+      "shoulder_lift": 15,
+      "elbow_flex": 15,
+      "wrist_flex": 20,
+      "wrist_roll": 40
+    },
+    "approach_deg": 8.0,
+    "clearance_m": {
+      "wrist_link": 0.08,
+      "gripper_link": 0.07,
+      "gripper_frame_link": 0.07,
+      "camera": 0.07
+    },
+    "image_margin_px": 120,
+    "distance_m": [
+      0.15,
+      0.5
+    ],
+    "max_view_angle_deg": 55,
+    "joint_limit_margin_raw": 60
+  },
+  "candidates_found": 118,
+  "poses": [
+    {
+      "number": 1,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2171,
+        "shoulder_lift": 2204,
+        "elbow_flex": 1385,
+        "wrist_flex": 2944,
+        "wrist_roll": 1867
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2171,
+        "shoulder_lift": 2113,
+        "elbow_flex": 1294,
+        "wrist_flex": 2944,
+        "wrist_roll": 1867
+      },
+      "joint_degrees": {
+        "shoulder_pan": 8.44,
+        "shoulder_lift": 10.87,
+        "elbow_flex": -38.25,
+        "wrist_flex": 75.83,
+        "wrist_roll": 74.13
+      },
+      "clearance_mm": 115.2,
+      "predicted_view": {
+        "corners_px": [
+          [
+            981.0,
+            295.7
+          ],
+          [
+            795.7,
+            355.1
+          ],
+          [
+            733.3,
+            194.3
+          ],
+          [
+            903.0,
+            137.1
+          ]
+        ],
+        "distance_m": 0.3344,
+        "view_angle_deg": 24.7
+      }
+    },
+    {
+      "number": 2,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2364,
+        "shoulder_lift": 2388,
+        "elbow_flex": 1111,
+        "wrist_flex": 3070,
+        "wrist_roll": 2157
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2364,
+        "shoulder_lift": 2297,
+        "elbow_flex": 1020,
+        "wrist_flex": 3070,
+        "wrist_roll": 2157
+      },
+      "joint_degrees": {
+        "shoulder_pan": 25.41,
+        "shoulder_lift": 27.04,
+        "elbow_flex": -62.34,
+        "wrist_flex": 86.91,
+        "wrist_roll": 99.63
+      },
+      "clearance_mm": 110.3,
+      "predicted_view": {
+        "corners_px": [
+          [
+            646.1,
+            290.2
+          ],
+          [
+            458.4,
+            329.7
+          ],
+          [
+            418.5,
+            148.9
+          ],
+          [
+            601.1,
+            121.4
+          ]
+        ],
+        "distance_m": 0.3168,
+        "view_angle_deg": 20.8
+      }
+    },
+    {
+      "number": 3,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2290,
+        "shoulder_lift": 1975,
+        "elbow_flex": 1338,
+        "wrist_flex": 3106,
+        "wrist_roll": 2327
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2290,
+        "shoulder_lift": 1884,
+        "elbow_flex": 1247,
+        "wrist_flex": 3106,
+        "wrist_roll": 2327
+      },
+      "joint_degrees": {
+        "shoulder_pan": 18.9,
+        "shoulder_lift": -9.26,
+        "elbow_flex": -42.38,
+        "wrist_flex": 90.07,
+        "wrist_roll": 114.57
+      },
+      "clearance_mm": 189.9,
+      "predicted_view": {
+        "corners_px": [
+          [
+            626.1,
+            351.6
+          ],
+          [
+            488.8,
+            332.3
+          ],
+          [
+            497.7,
+            203.2
+          ],
+          [
+            625.1,
+            230.4
+          ]
+        ],
+        "distance_m": 0.4226,
+        "view_angle_deg": 31.1
+      }
+    },
+    {
+      "number": 4,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2093,
+        "shoulder_lift": 1872,
+        "elbow_flex": 1829,
+        "wrist_flex": 2945,
+        "wrist_roll": 2442
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2093,
+        "shoulder_lift": 1781,
+        "elbow_flex": 1738,
+        "wrist_flex": 2945,
+        "wrist_roll": 2442
+      },
+      "joint_degrees": {
+        "shoulder_pan": 1.58,
+        "shoulder_lift": -18.32,
+        "elbow_flex": 0.79,
+        "wrist_flex": 75.92,
+        "wrist_roll": 124.68
+      },
+      "clearance_mm": 89.0,
+      "predicted_view": {
+        "corners_px": [
+          [
+            937.5,
+            369.3
+          ],
+          [
+            813.8,
+            273.1
+          ],
+          [
+            896.4,
+            124.8
+          ],
+          [
+            1009.6,
+            227.1
+          ]
+        ],
+        "distance_m": 0.3601,
+        "view_angle_deg": 42.5
+      }
+    },
+    {
+      "number": 5,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2152,
+        "shoulder_lift": 1839,
+        "elbow_flex": 2164,
+        "wrist_flex": 2458,
+        "wrist_roll": 2199
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2152,
+        "shoulder_lift": 1748,
+        "elbow_flex": 2073,
+        "wrist_flex": 2458,
+        "wrist_roll": 2199
+      },
+      "joint_degrees": {
+        "shoulder_pan": 6.77,
+        "shoulder_lift": -21.22,
+        "elbow_flex": 30.24,
+        "wrist_flex": 33.1,
+        "wrist_roll": 103.32
+      },
+      "clearance_mm": 56.1,
+      "predicted_view": {
+        "corners_px": [
+          [
+            944.3,
+            372.7
+          ],
+          [
+            755.4,
+            339.1
+          ],
+          [
+            758.7,
+            161.5
+          ],
+          [
+            928.8,
+            199.7
+          ]
+        ],
+        "distance_m": 0.3104,
+        "view_angle_deg": 40.5
+      }
+    },
+    {
+      "number": 6,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2408,
+        "shoulder_lift": 1851,
+        "elbow_flex": 1799,
+        "wrist_flex": 2800,
+        "wrist_roll": 2045
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2408,
+        "shoulder_lift": 1760,
+        "elbow_flex": 1708,
+        "wrist_flex": 2800,
+        "wrist_roll": 2045
+      },
+      "joint_degrees": {
+        "shoulder_pan": 29.27,
+        "shoulder_lift": -20.16,
+        "elbow_flex": -1.85,
+        "wrist_flex": 63.17,
+        "wrist_roll": 89.78
+      },
+      "clearance_mm": 128.1,
+      "predicted_view": {
+        "corners_px": [
+          [
+            611.0,
+            278.0
+          ],
+          [
+            453.6,
+            342.6
+          ],
+          [
+            393.7,
+            206.8
+          ],
+          [
+            543.8,
+            154.4
+          ]
+        ],
+        "distance_m": 0.3647,
+        "view_angle_deg": 31.1
+      }
+    },
+    {
+      "number": 7,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2260,
+        "shoulder_lift": 1867,
+        "elbow_flex": 1879,
+        "wrist_flex": 2652,
+        "wrist_roll": 1566
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2260,
+        "shoulder_lift": 1776,
+        "elbow_flex": 1788,
+        "wrist_flex": 2652,
+        "wrist_roll": 1566
+      },
+      "joint_degrees": {
+        "shoulder_pan": 16.26,
+        "shoulder_lift": -18.76,
+        "elbow_flex": 5.18,
+        "wrist_flex": 50.16,
+        "wrist_roll": 47.67
+      },
+      "clearance_mm": 116.1,
+      "predicted_view": {
+        "corners_px": [
+          [
+            934.4,
+            230.0
+          ],
+          [
+            801.4,
+            370.3
+          ],
+          [
+            689.6,
+            271.3
+          ],
+          [
+            801.0,
+            148.3
+          ]
+        ],
+        "distance_m": 0.3434,
+        "view_angle_deg": 32.0
+      }
+    },
+    {
+      "number": 8,
+      "role": "validation",
+      "target_raw": {
+        "shoulder_pan": 2349,
+        "shoulder_lift": 2009,
+        "elbow_flex": 1453,
+        "wrist_flex": 3054,
+        "wrist_roll": 1504
+      },
+      "pre_position_raw": {
+        "shoulder_pan": 2349,
+        "shoulder_lift": 1918,
+        "elbow_flex": 1362,
+        "wrist_flex": 3054,
+        "wrist_roll": 1504
+      },
+      "joint_degrees": {
+        "shoulder_pan": 24.09,
+        "shoulder_lift": -6.27,
+        "elbow_flex": -32.27,
+        "wrist_flex": 85.5,
+        "wrist_roll": 42.22
+      },
+      "clearance_mm": 144.8,
+      "predicted_view": {
+        "corners_px": [
+          [
+            768.6,
+            181.7
+          ],
+          [
+            690.0,
+            325.8
+          ],
+          [
+            578.4,
+            260.1
+          ],
+          [
+            646.6,
+            129.3
+          ]
+        ],
+        "distance_m": 0.3819,
+        "view_angle_deg": 31.9
+      }
+    }
+  ],
+  "note": "Clearance and visibility use the current (\u224811-18 mm off) model; table at z=0 of the tag frame; obstacles other than the table are not modeled.",
+  "max_joint_move_per_transition_deg": [
+    25,
+    36,
+    43,
+    43,
+    32,
+    42,
+    37
+  ],
+  "frozen_candidates": {
+    "folder": "project1/data/multipose_20261108",
+    "sha256": {
+      "fit_none.json": "d761030346fc04856db254cc705ef4f5b624a11783d8be3e6852fdc2836d0c78",
+      "fit_three.json": "b8d104c35e169ec6f629d57a8b0bc92431092a7a693226418410d028556a9cce"
+    }
+  },
+  "decision_rule": "All 8 poses are confirmation-only. Simplest frozen candidate (a, then b) meeting the criterion on all measured confirmation poses is recommended; otherwise nothing is applied."
+}

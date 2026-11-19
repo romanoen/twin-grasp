@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "hsv_red_low_max": 12,
+  "hsv_red_high_min": 170,
+  "min_saturation": 100,
+  "min_value": 45,
+  "min_component_area_px": 80,
+  "min_area_relative_to_tag": 0.015,
+  "max_area_relative_to_tag": 1.25,
+  "border_margin_px": 2,
+  "min_solidity": 0.8,
+  "polygon_epsilon_perimeter_fraction": 0.012,
+  "min_color_region_fraction": 0.08,
+  "min_lab_center_separation": 12.0,
+  "third_cluster_max_relative_compactness": 0.6,
+  "canny_low": 30,
+  "canny_high": 80,
+  "note": "Broad image-space filter, not a metric cube-size check: tag and cube have different foreshortening. Upper area ratio expanded from 0.65 to 1.25 using fit view 6 before holdout processing. Color regions and internal line candidates are not verified physical faces/edges."
+}

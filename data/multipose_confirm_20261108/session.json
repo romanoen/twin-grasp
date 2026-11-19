@@ -1,0 +1,119 @@
+{
+  "purpose": "motor_driven_multipose_calibration_check",
+  "plan": "plan.json",
+  "plan_sha256": "63d2015b85f259c50587f9cbbd1d9aa6df186e9437b4827c49f6dea0df83ccdb",
+  "criterion": {
+    "control_position_rms_mm_below": 4.0,
+    "control_position_max_mm_at_most": 6.0,
+    "rule": "Simplest variant meeting both limits on the held-out controls is adopted; otherwise nothing is applied."
+  },
+  "hardware_motion": "motor_driven_planned_poses",
+  "calibration_changed": false,
+  "poses": [
+    {
+      "number": 1,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": 6,
+        "shoulder_lift": 4,
+        "elbow_flex": -1,
+        "wrist_flex": -3,
+        "wrist_roll": 5
+      },
+      "file": "pose_01.json",
+      "samples": 8
+    },
+    {
+      "number": 2,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": -4,
+        "shoulder_lift": 5,
+        "elbow_flex": 2,
+        "wrist_flex": -4,
+        "wrist_roll": -6
+      },
+      "file": "pose_02.json",
+      "samples": 8
+    },
+    {
+      "number": 3,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": 7,
+        "shoulder_lift": 1,
+        "elbow_flex": -1,
+        "wrist_flex": -4,
+        "wrist_roll": -6
+      },
+      "file": "pose_03.json",
+      "samples": 8
+    },
+    {
+      "number": 4,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": 6,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 8,
+        "wrist_roll": -3
+      },
+      "file": "pose_04.json",
+      "samples": 8
+    },
+    {
+      "number": 5,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": -5,
+        "shoulder_lift": 1,
+        "elbow_flex": 3,
+        "wrist_flex": 10,
+        "wrist_roll": 3
+      },
+      "file": "pose_05.json",
+      "samples": 8
+    },
+    {
+      "number": 6,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": -6,
+        "shoulder_lift": 3,
+        "elbow_flex": 0,
+        "wrist_flex": -1,
+        "wrist_roll": 4
+      },
+      "file": "pose_06.json",
+      "samples": 8
+    },
+    {
+      "number": 7,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": 4,
+        "shoulder_lift": 3,
+        "elbow_flex": 4,
+        "wrist_flex": 10,
+        "wrist_roll": 4
+      },
+      "file": "pose_07.json",
+      "samples": 8
+    },
+    {
+      "number": 8,
+      "role": "validation",
+      "settle_error_raw": {
+        "shoulder_pan": -5,
+        "shoulder_lift": 1,
+        "elbow_flex": 0,
+        "wrist_flex": -2,
+        "wrist_roll": 6
+      },
+      "file": "pose_08.json",
+      "samples": 8
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,88 @@
+{
+  "camera_index": 0,
+  "image_width": 1280,
+  "image_height": 720,
+  "board_inner_corners": [
+    9,
+    6
+  ],
+  "object_point_units": "checkerboard squares",
+  "camera_matrix": [
+    [
+      724.1519475965347,
+      0.0,
+      635.1637949605064
+    ],
+    [
+      0.0,
+      725.6241939962049,
+      310.8167052184232
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion_coefficients": [
+    [
+      0.06078430849775311,
+      0.14092112796155462,
+      -0.0047863600871248255,
+      -0.0023336568108432354,
+      -0.36707419782244105
+    ]
+  ],
+  "rms_reprojection_error_px": 0.2818384076541438,
+  "per_view_rms_px": [
+    0.166810542345047,
+    0.22513806819915771,
+    0.20070579648017883,
+    0.21566376090049744,
+    0.15842288732528687,
+    0.16241097450256348,
+    0.2588106691837311,
+    0.19208219647407532,
+    0.22555230557918549,
+    0.3594513237476349,
+    0.3935495913028717,
+    0.41056087613105774,
+    0.2279832661151886,
+    0.172150120139122,
+    0.2159276306629181,
+    0.17521785199642181,
+    0.18260598182678223,
+    0.18650482594966888,
+    0.3569149672985077,
+    0.42785879969596863,
+    0.2009282261133194,
+    0.28296685218811035,
+    0.2658695876598358,
+    0.33516740798950195,
+    0.38764047622680664,
+    0.49035733938217163,
+    0.3024296760559082,
+    0.24129939079284668,
+    0.2582584023475647,
+    0.33274930715560913
+  ],
+  "view_count": 30,
+  "validation_status": "initial_calibration_reprojection_and_holdout_checked",
+  "notes": "Focus and displayed board scale must stay fixed. Validate view coverage and reprojection errors before use.",
+  "validation": {
+    "held_out_views": 6,
+    "held_out_rms_px": [
+      0.16151805222034454,
+      0.1608629822731018,
+      0.39795610308647156,
+      0.17668616771697998,
+      0.1923643797636032,
+      0.4507574737071991
+    ],
+    "max_held_out_rms_px": 0.4507574737071991,
+    "focal_length_relative_change": 0.0036924285807039547,
+    "coverage_note": "Varied tablet orientations and positions; image edge coverage remains limited",
+    "physical_accuracy_verified": false
+  },
+  "source_directory": "camera/calibration_views/20261103_182229"
+}

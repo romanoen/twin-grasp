@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SO-101 Grasp Station</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="logo">SO-101</span><span class="sub">grasp station</span></div>
+    <div class="leds">
+      <span class="led" id="led-link"><i></i>LINK</span>
+      <span class="led" id="led-arm"><i></i>ARM</span>
+      <span class="led" id="led-cam"><i></i>CAM</span>
+      <span id="clock">--:--:--</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="viewport" aria-label="3D view">
+      <div id="loading">loading scene ...</div>
+      <div class="overlay tl"><span class="tag">VIEW</span><div class="seg"><button id="view-orbit" class="on" type="button">PERSP</button><button id="view-top" type="button">TOP</button></div></div>
+      <div class="overlay bl" id="cursor">x ---.-  y ---.-  mm</div>
+      <div class="overlay br legend"><span><i class="sw cube"></i>cube</span><span><i class="sw target"></i>target</span><span><i class="sw area"></i>work area</span></div>
+    </section>
+
+    <section class="side">
+      <div class="panel">
+        <h2>WRIST CAMERA <span class="right" id="cam-age"></span></h2>
+        <figure class="camera"><img id="camera" alt="Wrist camera with detected outline and model cube"><figcaption>NO SIGNAL</figcaption></figure>
+      </div>
+
+      <div class="panel status" id="status">
+        <h2>STATUS <span class="badge" id="phase">OFF</span></h2>
+        <p id="message" role="status" aria-live="polite">Station not running.</p>
+        <div class="busy"><span></span></div>
+      </div>
+
+      <div class="panel">
+        <h2>CONTROL</h2>
+        <button id="cmd-stop" class="stop" type="button">STOP <kbd>ESC</kbd></button>
+        <div class="grid4">
+          <button id="cmd-locate" type="button">LOCATE <kbd>L</kbd></button>
+          <button id="cmd-home" type="button">RESET <kbd>R</kbd></button>
+          <button id="cmd-grasp" type="button">GRASP <kbd>G</kbd></button>
+          <button id="cmd-place" type="button">PLACE <kbd>P</kbd></button>
+        </div>
+        <p id="hint"></p>
+      </div>
+
+      <div class="panel">
+        <h2>POSE <span class="right">table frame</span></h2>
+        <table class="pose">
+          <thead><tr><th></th><th>x mm</th><th>y mm</th><th>θ deg</th></tr></thead>
+          <tbody>
+            <tr><th><i class="sw cube"></i>cube</th><td id="cube-x">—</td><td id="cube-y">—</td><td id="cube-yaw">—</td></tr>
+            <tr><th><i class="sw target"></i>target</th>
+              <td><input id="target-x" type="number" step="1" aria-label="target x in mm"></td>
+              <td><input id="target-y" type="number" step="1" aria-label="target y in mm"></td>
+              <td><input id="target-yaw" type="number" step="5" min="0" max="89" aria-label="target rotation in degrees"></td></tr>
+          </tbody>
+        </table>
+        <p class="note">drag the target in the 3D view · Q/E rotate</p>
+      </div>
+
+      <div class="panel grow">
+        <h2>LOG</h2>
+        <ol id="log"></ol>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
