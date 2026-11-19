@@ -1,8 +1,9 @@
-# SO-101 Grasp Station
+# Twin Grasp
 
 Vision-guided pick and place with a low-cost SO-101 arm and a single wrist camera. The arm finds a 25 mm cube
 on the table, picks it up and sets it down at a pose chosen in a browser UI. There is no depth sensor and no
-learned policy: everything comes from calibrated geometry.
+learned policy: everything comes from calibrated geometry. The browser shows a live digital twin of the arm and the
+cube, and grasping and placing are executed from that model.
 
 ![Demo: real arm on the left, station UI on the right (2x speed)](docs/demo.gif)
 
